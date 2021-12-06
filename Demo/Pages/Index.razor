@@ -1,0 +1,19 @@
+﻿@page "/"
+@using Demo.Models
+@inject SessionState sessionState
+<PageTitle>Index</PageTitle>
+
+@if (sessionState != null)
+{
+	@sessionState.MlsNumber;
+	@sessionState.PropertyTaxId
+}
+
+
+
+@code {
+	//[Parameter]
+	//public History History { get; set; }
+
+
+}
